@@ -7,7 +7,7 @@ body{
     background-size: 100%
 }
 .main-body{
-    width: 95%;
+    width: 80%;
     margin-left: auto !important;
     margin-right: auto !important;
     
@@ -17,10 +17,11 @@ body{
     background-color: white;
 }
 .main-child-first{
-    flex: 0 0 74.600007%;
-    max-width: 74.600007%;
+    flex: 0 0 74%;
+    max-width: 74%;
     padding-left: 0px !important;
-    padding-right: 0px !important
+    padding-right: 0px !important;
+    margin-right: 1px !important
 }
 #employee-header{
     position: sticky;
