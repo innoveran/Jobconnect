@@ -1,0 +1,24 @@
+*, body{
+    box-sizing: border-box
+}
+body{
+    background-image: url("../img/pagesBackground.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100%
+}
+.main-body{
+    width: 95%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    
+}
+
+.main-child{
+    background-color: white;
+}
+.main-child-first{
+    flex: 0 0 74.600007%;
+    max-width: 74.600007%;
+    padding-left: 0px !important;
+    padding-right: 0px !important
+}
