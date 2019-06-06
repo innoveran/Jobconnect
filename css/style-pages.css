@@ -4,7 +4,7 @@
 body{
     background-image: url("../img/pagesBackground.jpeg");
     background-repeat: no-repeat;
-    background-size: 100%
+    background-size: cover
 }
 .main-body{
     width: 80%;
