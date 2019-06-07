@@ -4,7 +4,8 @@
 body{
     background-image: url("../img/pagesBackground.jpeg");
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    background-attachment: fixed
 }
 .main-body{
     width: 80%;
