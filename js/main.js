@@ -50,6 +50,8 @@ $(function(){
     
     
 });
+
+
 if(document.getElementById("rightDate")){
     document.getElementById("rightDate").innerHTML = new Date().getFullYear();
 }
@@ -58,9 +60,31 @@ if(document.getElementById("rightDate")){
 fetch("json/specializationData.json")
 .then(response => response.json())
 .then(result => {
-    let optionItems = "<option selected>Select Specialization</options>"; 
+    let optionItems = "<option selected value='Select Specialization'>Select Specialization</options>"; 
     for(const val of result){
         optionItems += `<option value='${val}'> ${val} </option>`;
     }
     document.getElementById("specialItems").innerHTML = optionItems;
 }); 
+
+document.getElementById("specialItems").addEventListener("change", (event) => {
+    if(event.target.value != 'Select Specialization'){
+        skills("json/skills.json", event.target.value);
+    }
+});
+
+function skills(filePath , targetValue){
+    fetch(filePath)
+    .then(response => response.json())
+    .then(result => {
+        let optionItems = "<option selected value='Select Skills'>Select Skills</options>"; 
+        for(const [key,val] of Object.entries(result)){
+            if(key == targetValue){
+                for(const item of val)
+                optionItems += `<option value='${item}'> ${item} </option>`;
+            }
+            
+        }
+        document.getElementById("skills").innerHTML = optionItems;
+    }); 
+}
