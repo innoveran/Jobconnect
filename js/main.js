@@ -50,4 +50,17 @@ $(function(){
     
     
 });
-document.getElementById("rightDate").innerHTML = new Date().getFullYear();
+if(document.getElementById("rightDate")){
+    document.getElementById("rightDate").innerHTML = new Date().getFullYear();
+}
+
+
+fetch("json/specializationData.json")
+.then(response => response.json())
+.then(result => {
+    let optionItems = "<option selected>Select Specialization</options>"; 
+    for(const val of result){
+        optionItems += `<option value='${val}'> ${val} </option>`;
+    }
+    document.getElementById("specialItems").innerHTML = optionItems;
+}); 
