@@ -46,5 +46,8 @@ $(function(){
     }else if(sessionStorage.user == "employer"){
         $("#employee-header").css("display","none");
     }
+
+    
     
 });
+document.getElementById("rightDate").innerHTML = new Date().getFullYear();

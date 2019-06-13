@@ -29,3 +29,39 @@ body{
     top: 0px;
     z-index: 999
 }
+footer{
+    background-color: #26272b;
+    color: #bbb;
+}
+
+.footer-section{
+    width: 80%;
+    margin: 0px auto
+}
+
+.footer-section div h6{
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom:  10px  
+}
+.footer-section-list{
+    list-style: none;
+    padding-left: 0px;
+    color: #bbb; 
+}
+
+.footer-section-list li a{
+    color: #bbb; 
+
+}
+hr{
+    background-color:  #bbb;
+    width: 80%;
+    opacity: .1;
+}
+
+.footer-section-list li a:hover{
+    text-decoration: none;
+    color: white; 
+
+}
