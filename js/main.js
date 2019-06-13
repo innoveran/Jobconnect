@@ -11,10 +11,11 @@ $(function(){
         event.preventDefault();
         var value = $("form input[name=name]").val();
         window.sessionStorage.setItem("name", value);
-        if($("#employer:checked").val()){
+        if($("#employer:checked").val() ){
             window.sessionStorage.setItem("user", "employer");
             window.location.replace("pages");
-        }else if($("#employee:checked").val() ){
+        }
+        if($("#employee:checked").val() && $("#specialItems").val() != "Select Specialization" && $("#skills").val() != "Select Skills" ){
             window.sessionStorage.setItem("user", "employee");
             window.location.replace("pages");
         }
@@ -56,7 +57,8 @@ if(document.getElementById("rightDate")){
     document.getElementById("rightDate").innerHTML = new Date().getFullYear();
 }
 
-
+if(document.getElementById("userForm"))
+{
 fetch("json/specializationData.json")
 .then(response => response.json())
 .then(result => {
@@ -72,6 +74,7 @@ document.getElementById("specialItems").addEventListener("change", (event) => {
         skills("json/skills.json", event.target.value);
     }
 });
+}
 
 function skills(filePath , targetValue){
     fetch(filePath)
