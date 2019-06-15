@@ -65,3 +65,33 @@ hr{
     color: white; 
 
 }
+.fontIcons a{
+    font-size: xx-large;
+    color: gray;
+    margin-left: 5px
+}
+.fontIcons a:hover{
+    font-size: xx-large;
+    color: blue
+}
+.container-about-text{
+    color: #c8d0d7;
+    letter-spacing: 2px
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Oswald,sans-serif;
+    letter-spacing: 1px;
+    margin: 16px 0;
+    line-height: 1.4;
+}
+h1::after{
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    margin-top: 65px;
+    width: 48px;
+    height: 2px;
+    background-color: #29aafe;
+    content: "";
+
+}
