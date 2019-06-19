@@ -93,5 +93,16 @@ h1::after{
     height: 2px;
     background-color: #29aafe;
     content: "";
-
 }
+div.card{
+    background-color: #bbb
+}
+.card-body span{
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px
+}
+.card-body span i{
+    margin-right: 14px
+}
+
