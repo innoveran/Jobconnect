@@ -59,10 +59,19 @@ if(document.getElementById("rightDate")){
 
 if(document.getElementById("userForm"))
 {
-fetch("json/specializationData.json")
+locate = location.pathname;
+if(locate.includes("searchcandidate"))
+{
+    url = "../../json/specializationData.json";
+    sel = "All Categories";
+}else{
+    url = "json/specializationData.json";
+    sel = "Select Specialization";
+}
+fetch(url)
 .then(response => response.json())
 .then(result => {
-    let optionItems = "<option selected value='Select Specialization'>Select Specialization</options>"; 
+    let optionItems = "<option selected value='Select Specialization'>"+sel+"</options>"; 
     for(const val of result){
         optionItems += `<option value='${val}'> ${val} </option>`;
     }
@@ -90,4 +99,49 @@ function skills(filePath , targetValue){
         }
         document.getElementById("skills").innerHTML = optionItems;
     }); 
+}
+
+
+if(document.getElementById("candidatesSearched"))
+{
+fetch("../../json/searchcandidates.json")
+.then(response => response.json())
+.then(result => {
+    let candidates = "";
+    for(const [key,val] of Object.entries(result)){
+        for(const res of Object.values(val)){
+            candidates += `
+            <div class=" mt-3 canditem mx-1">
+                <header class="canhead py-3 px-3">
+                    <img src="../../img/candidate_avatar.jpg" class="img-thumbnail float-left" style="width:64px; height:64px" >
+                    <div class="d-inline-block hgroup mx-4 candisplay">
+                        <h4>${res.name}</h4>
+                        <h5>${res.title}</h5>
+                    </div>
+                </header>
+                <div class="card-body canhead">
+                    <p>
+                        ${res.profile}
+                    </p>
+                </div>
+                <div class=" row py-3 px-2">
+                    <div class="col-sm-6">
+                    <i class="fas fa-phone"></i> ${res.phone}
+                    </div>
+                    <div class="col-sm-6 text-right">
+                    <i class="fas fa-envelope"></i> ${res.email}
+                    </div>
+                </div>
+            </div>`;
+        }
+         
+    }
+    document.getElementById("candidatesSearched").innerHTML = candidates;
+}); 
+
+document.getElementById("specialItems").addEventListener("change", (event) => {
+    if(event.target.value != 'Select Specialization'){
+        skills("json/skills.json", event.target.value);
+    }
+});
 }

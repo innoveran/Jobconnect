@@ -105,4 +105,21 @@ div.card{
 .card-body span i{
     margin-right: 14px
 }
+.canditem{
+    border: 1px solid #eee;
+    
+}
+
+.canhead{
+    border-bottom: 1px solid #f6f6f6;
+    width: 100%
+}
+.candisplay h4,.candisplay h5{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.candisplay h5{
+    color: #96a2b2
+}
+
 

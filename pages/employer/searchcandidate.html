@@ -12,7 +12,7 @@
 </head>
 <body>
     <!--Begingin of Header -->
-    <header >
+    <header id="#employee-header">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="../">JobConnect</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +36,7 @@
                     </div>
                 </div> 
             </nav>  
-    </header>
+    </header >
     
     <!--End of Header-->
 
@@ -46,8 +46,8 @@
             <section class="container py-5">
                 <small class="text-center d-block display-5 container-about-text">SEARCH</small>
                 <h1 class="text-center">Jobconnect Candidates</h1>
-                <div class=" py-4 px-1 mt-5">
-                    <form action="" >
+                <div class=" py-4 px-1 mt-5 bg-secondary">
+                    <form action="" id="userForm">
                         <div class="row">
                             <div class="col-sm-4 form-group">
                                 <input type="text" class="form-control" name="" id="" placeholder="Keyword: name, skill, or tag">
@@ -56,14 +56,20 @@
                                 <input type="text" class="form-control" name="" id="" placeholder="Location: city, state or zip">
                             </div>
                             <div class="col-sm-4">
-                                <select class="form-control" name="" id="">
+                                <select class="form-control" name="" id="specialItems">
 
                                 </select>
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="submit" value="SEARCH" class="btn btn-success">
                             </div>
                         </div>
                     </form>
                 </div>
-                
+                <div class="mt-5" id="candidatesSearched">
+
+                </div>
+
             </section>
         </section>
         <aside class="col-sm-3 rounded-top main-child">
