@@ -109,7 +109,7 @@ fetch("../../json/searchcandidates.json")
 .then(result => {
     let candidates = "";
     for(const [key,val] of Object.entries(result)){
-        for(const res of Object.values(val)){
+        for(const [spot,res] of Object.entries(val)){
             candidates += `
             <div class=" mt-3 canditem mx-1">
                 <header class="canhead py-3 px-3">
@@ -129,7 +129,7 @@ fetch("../../json/searchcandidates.json")
                     <i class="fas fa-phone"></i> ${res.phone}
                     </div>
                     <div class="col-sm-6 text-right">
-                    <i class="fas fa-envelope"></i> ${res.email}
+                    <a class="btn btn-primary" href="candidates.html?category=${key}&index=${spot}">View Candidate</a>
                     </div>
                 </div>
             </div>`;
