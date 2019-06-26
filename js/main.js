@@ -145,3 +145,4 @@ document.getElementById("specialItems").addEventListener("change", (event) => {
     }
 });
 }
+

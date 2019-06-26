@@ -1,0 +1,7 @@
+/*
+ Quantcast measurement tag
+ Copyright (c) 2008-2017, Quantcast Corp.
+*/
+(function(a,g,f){var k=function(e,d,a){return e?"nc"===e?!d||!a||0>d.indexOf(a):"eq"===e?d===a:"sw"===e?0===d.indexOf(a):"ew"===e?(e=d.length-a.length,d=d.lastIndexOf(a,e),-1!==d&&d===e):"c"===e?0<=d.indexOf(a):!1:!1},l=function(e){var a=f.createElement("a");a.href=e;return a},b=function(a,d,c){var b;b=g.top===g.self?f.location.href:l(f.referrer).href;k(d,b,c)?a(b):a(!1)},h=function(a,d,c){var b;b=g.top===g.self?f.location.pathname:l(f.referrer).pathname;k(d,b,c)?a(b):a(!1)},c=function(a){return"array"===
+{}.toString.call(a).match(/\s([a-zA-Z]+)/)[1].toLowerCase()?{labels:a.join(",")}:{labels:""+a}};__qc.apply(null,["rules",[a,null,[[c,"Section.Blog"]],[[b,"c","/blog/"]]],[a,null,[[c,"Section.Know Your Worth"]],[[b,"c","/knowyourworth/"]]],[a,null,[[c,"Section.Interviews"]],[[b,"c","/Interview/"]]],[a,null,[[c,"Section.Salaries"]],[[h,"c","/Salaries/"]]],[a,null,[[c,"Section.Company Reviews"]],[[h,"c","/Reviews/"]]],[a,null,[[c,"Section.Jobs"]],[[h,"c","/job/"]]],[a,null,[[c,"Company.Bain and Company"]],
+[[b,"c","Bain-and-Company"]]],[a,null,[[c,"Company.Target"]],[[b,"c","Target"]]],[a,null,[[c,"Company.Facebook"]],[[b,"c","facebook"]]],[a,null,[[c,"Company.Microsoft"]],[[b,"c","microsoft"]]],[a,null,[[c,"Company.Fidelity Investments"]],[[b,"c","Fidelity-Investments"]]]])})("p-77hG-A4X4ka9Q",window,document);
