@@ -48,8 +48,6 @@ $(function(){
         $("#employee-header").css("display","none");
     }
 
-    
-    
 });
 
 
@@ -144,5 +142,19 @@ document.getElementById("specialItems").addEventListener("change", (event) => {
         skills("json/skills.json", event.target.value);
     }
 });
+}
+
+if(document.getElementById("viewCandidate")){
+    const candidateSearch = location.search;
+    const searchUpdate = candidateSearch.replace("?","");
+    const searchSplit = searchUpdate.split("&");
+    let canInfo = [];
+    let count = 0;
+    for(const item of searchSplit.values()){
+        const cat = item.split("=");
+        canInfo[count] = cat[1];
+        count++;
+    }
+    
 }
 
