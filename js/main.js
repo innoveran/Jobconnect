@@ -181,18 +181,18 @@ if(document.getElementById("viewCandidate")){
                                     </p>
                                 </div>
                                 <div class="pt-5 row">
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 columnInfo">
                                         <ul>
-                                            <li><i class="fas fa-map-marker-alt"></i> ${res.address}</li>
-                                            <li><i class="fas fa-city"></i> ${res.city}</li>
-                                            <li><i class="fas fa-phone"></i> ${res.phone}</li>
+                                            <li class="mt-4"><i class="fas fa-map-marker-alt mr-2"></i> ${res.address}</li>
+                                            <li class="mt-4"><i class="fas fa-city mr-2"></i> ${res.city}</li>
+                                            <li class="mt-4"><i class="fas fa-phone mr-2"></i> ${res.phone}</li>
                                         </ul>
                                     </div>
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 columnInfo">
                                         <ul>
-                                            <li><i class="fa fa-neuter"></i> ${res.gender}</li>
-                                            <li><i class="fas fa-envelope"></i> ${res.email}</li>
-                                            <li><i class="fas fa-user-alt"></i> ${res.status}</li>
+                                            <li class="mt-4"><i class="fa fa-neuter mr-2"></i> ${res.gender}</li>
+                                            <li class="mt-4"><i class="fas fa-envelope mr-2"></i> ${res.email}</li>
+                                            <li class="mt-4"><i class="fas fa-user-alt mr-2"></i> ${res.status}</li>
                                         </ul>
                                     </div>
                                 </div>
