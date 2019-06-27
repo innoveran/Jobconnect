@@ -24,7 +24,7 @@ body{
     padding-right: 0px !important;
     margin-right: 1px !important
 }
-#employee-header{
+#emp-header{
     position: sticky;
     top: 0px;
     z-index: 999
