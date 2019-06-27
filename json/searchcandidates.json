@@ -7,7 +7,10 @@
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
             "state":"Lagos",
+            "status":"single",
+            "gender":"male",
             "title":"front end programmer",
+            "image":"../../img/candidate_avatar.jpg",
             "profile":"An organized, confident, problem solver and analytical Computer scientist with 5 years experience with web jobs done for Aki Solutions. I have also worked with G4S Nigeria Ltd and Funmobile Ltd. Communicates confidently and effectively at all levels and uses initiative to meet the highest standards. Always striving to go the extra mile in order to achieve the set goal.Seeking new challenges and additional responsibility to progress career."
 
         },
@@ -18,7 +21,10 @@
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
             "state":"Lagos",
+            "status":"single",
+            "gender":"female",
             "title":"front end programmer",
+            "image":"../../img/candidate_avatar.jpg",
             "profile":"An organized, confident, problem solver and analytical Computer scientist with 5 years experience with web jobs done for Aki Solutions. I have also worked with G4S Nigeria Ltd and Funmobile Ltd. Communicates confidently and effectively at all levels and uses initiative to meet the highest standards. Always striving to go the extra mile in order to achieve the set goal.Seeking new challenges and additional responsibility to progress career."
         },
         {
@@ -28,7 +34,10 @@
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
             "state":"Lagos",
+            "gender":"female",
             "title":"front end programmer",
+            "status":"single",
+            "image":"../../img/candidate_avatar.jpg",
             "profile":"An organized, confident, problem solver and analytical Computer scientist with 5 years experience with web jobs done for Aki Solutions. I have also worked with G4S Nigeria Ltd and Funmobile Ltd. Communicates confidently and effectively at all levels and uses initiative to meet the highest standards. Always striving to go the extra mile in order to achieve the set goal.Seeking new challenges and additional responsibility to progress career."
 
         }
@@ -41,7 +50,10 @@
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
             "State":"Lagos",
+            "gender":"male",
             "title":"front end programmer",
+            "status":"single",
+            "image":"../../img/candidate_avatar.jpg",
             "profile":"An organized, confident, problem solver and analytical Computer scientist with 5 years experience with web jobs done for Aki Solutions. I have also worked with G4S Nigeria Ltd and Funmobile Ltd. Communicates confidently and effectively at all levels and uses initiative to meet the highest standards. Always striving to go the extra mile in order to achieve the set goal.Seeking new challenges and additional responsibility to progress career."
 
         },
@@ -51,7 +63,10 @@
             "email":"innoveran@gmail.com",
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
-            "State":"Lagos"
+            "gender":"male",
+            "status":"single",
+            "State":"Lagos",
+            "image":"../../img/candidate_avatar.jpg"
         },
         {
             "name":"Innocent",
@@ -59,7 +74,10 @@
             "email":"innoveran@gmail.com",
             "address":"3 Omowunmi Street, Ajegunle Apapa",
             "city":"Lagos",
-            "State":"Lagos"
+            "gender":"male",
+            "status":"single",
+            "State":"Lagos",
+            "image":"../../img/candidate_avatar.jpg"
         }
     ]
 }
